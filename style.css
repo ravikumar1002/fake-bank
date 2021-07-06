@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-image: url('../img/bank-bg2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+/* logo line */
+
+
+.logo-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted blue;
+}
+
+.logo-area span {
+    border: 4px double black;
+    width: 40vw;
+}
+
+.logo img {
+    height: 14vh;
+    width: 13vw;
+}
+
+
+
+/* navbar css */
+
+
+.menu-bar {
+    background-color: teal;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    transition-property: initial;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background-color: rgb(230, 125, 84);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(o, 100, 0);
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+    background-color: yellowgreen;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(o, 100, 0);
+    margin-top: -58px;
+    margin-left: 166px;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 ul {
+    display: block;
+    margin: 10px;
+    background-color: yellowgreen;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.sub-menu-1 ul li a:hover .sub-menu-2 ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* ----------------- MAIN ------------------*/
+
+
+.bank-add img {
+    height: 508px;
+    width: 1485px;
+    margin-left: 0.5rem;
+    border: 8px double rgb(218, 207, 62);
+}
+
+.side-bar-1 {
+    position: absolute;
+    top: 35%;
+    writing-mode: vertical-lr;
+    padding: 1rem;
+    margin: 0rem 0.2rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.side-bar-2 {
+    position: absolute;
+    top: 52%;
+    writing-mode: vertical-lr;
+    padding: 1rem;
+    margin: 5rem 0.2rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+   
+}
+
+.side-bar-3 {
+    position: absolute;
+    top: 35%;
+    left: 88.3%;
+     border-radius: 10px;
+    padding: 0.4rem;
+    margin: 0rem 0rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.side-bar-4 {
+    position: absolute;
+    top: 45%;
+    left: 95%;
+    width: 3rem;
+    padding: 0.6rem;
+    margin: 0.3rem 0.3rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.side-bar-5 {
+    position: absolute;
+    top: 55%;
+    left: 95%;
+    width: 3rem;
+    padding: 0.6rem;
+    margin: 0.3rem 0.3rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.side-bar-6 {
+    position: absolute;
+    top: 65%;
+    left: 95%;
+    width: 3rem;
+    padding: 0.6rem;
+    margin: 0.3rem 0.3rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.side-bar-7 {
+    position: absolute;
+    top: 75%;
+    left: 95%;
+    width: 3rem;
+    padding: 0.6rem;
+    margin: 0.3rem 0.3rem;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.side-bar-8 {
+    position: fixed;
+    top: 87%;
+    left: 90%;
+    width: 6rem;
+    padding: 0.8rem;
+    margin: 0.3rem 0.3rem;
+    background-color: rgb(179, 21, 21);
+    font-size: 1.3rem;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.side-bar-8 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+
+
+/* ----------------------service------------------------ */
+
+.main-service {
+    font-size: 1.3rem;
+    margin: 0.5rem 0.5rem;
+    background-color: tomato;
+    padding: 1rem;
+    border-radius: 30px;
+
+}
+
+.service {
+    display: flex;
+    height: 88vhvh;
+    width: 98vw;
+
+    flex-wrap: wrap;
+
+
+}
+
+.service-heading {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.first-service {
+    height: 40vh;
+    width: 28vw;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0.5rem 2.2rem;
+    border: 2px solid black;
+}
+
+.first-service img {
+    height: 30vh;
+    width: 28vw;
+}
+
+.second-service {
+    height: 40vh;
+    width: 28vw;
+    text-align: center;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.second-service img {
+    height: 30vh;
+    width: 28vw;
+
+
+}
+
+.third-service {
+    height: 40vh;
+    width: 28vw;
+    text-align: center;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.third-service img {
+    height: 30vh;
+    width: 28vw;
+
+}
+
+.fourth-service {
+    height: 40vh;
+    width: 28vw;
+    text-align: center;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.fifth-service img {
+    height: 30vh;
+    width: 28vw;
+
+}
+
+.fifth-service {
+    height: 40vh;
+    width: 28vw;
+    text-align: center;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.sixth-service img {
+    height: 30vh;
+    width: 28vw;
+
+}
+
+.sixth-service {
+    height: 40vh;
+    width: 28vw;
+    text-align: center;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.fourth-service img {
+    height: 30vh;
+    width: 28vw;
+
+}
+
+/* -------additional-service ---------*/
+
+.additional-service {
+    font-size: 1.3rem;
+    margin: 0.5rem 0.5rem;
+    background-color: tomato;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.additional-service-part {
+    height: 88vh;
+    width: 98vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.additional-heading {
+    font-size: 1.3rem;
+    font-weight: bolder;
+   
+}
+
+.As-part-1 {
+    height: 42vh;
+    width: 20vw;
+    text-align: center;
+
+    margin: 0.5rem 2.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+
+
+}
+
+.As-part-1 img {
+    height: 30vh;
+    width: 20vw;
+}
+
+.As-part-2 {
+    height: 42vh;
+    width: 20vw;
+    text-align: center;
+
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.As-part-2 img {
+    height: 30vh;
+    width: 20vw;
+}
+
+.As-part-3 {
+    height: 42vh;
+    width: 20vw;
+    text-align: center;
+
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.As-part-3 img {
+    height: 30vh;
+    width: 20vw;
+}
+
+.As-part-4 {
+    height: 42vh;
+    width: 20vw;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+}
+
+.As-part-4 img {
+    height: 30vh;
+    width: 20vw;
+}
+
+.As-part-5 {
+    height: 42vh;
+    width: 20vw;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0.5rem 2rem;
+    border: 2px solid black;
+}
+
+.As-part-5 img {
+    height: 30vh;
+    width: 20vw;
+}
+
+/* ---------------------quota---------------------------- */
+
+.quota img{
+    height: 30vh;
+    width: 98.5vw;
+    margin: 1rem 0;
+    border: 3px dotted slategrey;
+    border-radius: 30px;
+}
+
+
+
+/*----------------- footer -------------------------- */
+footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      /* justify-content: center; */
+      font-size: 1.7rem;
+      padding: 1rem;
+      border-radius: 20px;
+}
